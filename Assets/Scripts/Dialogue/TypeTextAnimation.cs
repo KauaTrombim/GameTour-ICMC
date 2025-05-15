@@ -14,9 +14,11 @@ public class TypeTextAnimation : MonoBehaviour
 
     Coroutine coroutine;
 
+    DialogueUI dialogueUI;
+
     void Start()
     {
-        
+        dialogueUI = FindObjectOfType<DialogueUI>();
     }
 
     public void StartTyping()
@@ -42,5 +44,6 @@ public class TypeTextAnimation : MonoBehaviour
     public void Skip(){
         StopCoroutine(coroutine);
         textObject.maxVisibleCharacters = textObject.text.Length;
+        dialogueUI.backgroud.fillAmount = 1;
     }
 }

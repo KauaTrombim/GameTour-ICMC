@@ -34,6 +34,7 @@ public class DialogueSystem : MonoBehaviour
         if(currentTextIndex == 0)
         {
             dialogueUI.Enable();
+
         }
 
         dialogueUI.SetName(dialogueData.talkScript[currentTextIndex].name);

@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    //Inputs publicos
     public float Speed;
 
+    //Dialogo
     DialogueSystem dialogueSys;
+    GameObject manzato;
+    ShowClues showClues;
 
+    //Movimentação
     private Animator anim;
     private Rigidbody2D rb;
     private SpriteRenderer sprite;
@@ -15,6 +20,7 @@ public class Player : MonoBehaviour
     void Awake()
     {
         dialogueSys = FindObjectOfType<DialogueSystem>();
+        showClues = FindObjectOfType<ShowClues>();
     }
 
     void Start()
@@ -22,6 +28,7 @@ public class Player : MonoBehaviour
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
+        manzato = GameObject.FindWithTag("Manzato");
     }
 
     private void FixedUpdate()
@@ -29,12 +36,36 @@ public class Player : MonoBehaviour
         Vector2 direction = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         rb.velocity = direction.normalized * Speed;
 
-        if(direction.x != 0)
+        Vector2 playerPosition = transform.position;
+        Vector2 manzatoPosition = manzato.transform.position;
+        float distance = Vector2.Distance(playerPosition, manzatoPosition);
+
+        animationChange(direction);
+
+        //area de diálogo com o manzato
+        if(distance <= 4f)
+        {
+            showClues.showClueE();
+            //Aciona o diálogo
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                dialogueSys.Next();
+            }
+        }
+        else
+        {
+            showClues.hideClueE();
+        }
+    }
+    
+    private void animationChange(Vector2 dir)
+    {
+        if (dir.x != 0)
         {
             resetLayer();
 
             //Direita e Esquerda, respectivamente
-            if (direction.x > 0)
+            if (dir.x > 0)
             {
                 anim.SetLayerWeight(3, 1);
             }
@@ -44,18 +75,19 @@ public class Player : MonoBehaviour
             }
         }
 
-        if(direction.y > 0 && direction.x == 0)
+        if (dir.y > 0 && dir.x == 0)
         {
             resetLayer();
             anim.SetLayerWeight(1, 1);
         }
-        if (direction.y < 0 && direction.x == 0)
+        if (dir.y < 0 && dir.x == 0)
         {
             resetLayer();
             anim.SetLayerWeight(0, 1);
         }
 
-        if (direction != Vector2.zero)
+        //Alteração da variável
+        if (dir != Vector2.zero)
         {
             anim.SetBool("walking", true);
         }
@@ -63,12 +95,8 @@ public class Player : MonoBehaviour
         {
             anim.SetBool("walking", false);
         }
-
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            dialogueSys.Next();
-        }
     }
+
     private void resetLayer()
     {
         anim.SetLayerWeight(0, 0);
