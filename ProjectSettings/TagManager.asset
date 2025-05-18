@@ -45,8 +45,14 @@ TagManager:
   - name: Background
     uniqueID: 2761714769
     locked: 0
+  - name: Object
+    uniqueID: 1561292759
+    locked: 0
   - name: Character
     uniqueID: 271771287
+    locked: 0
+  - name: Collection
+    uniqueID: 4240476417
     locked: 0
   - name: Foreground
     uniqueID: 3614323339

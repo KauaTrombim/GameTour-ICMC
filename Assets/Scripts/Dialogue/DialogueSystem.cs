@@ -11,7 +11,9 @@ public enum STATE
 
 public class DialogueSystem : MonoBehaviour
 {
-    public DialogueData dialogueData;
+    //Dialogo
+    public List<DialogueData> dialogueData;
+    DialogueData currentScreenPlay;
 
     int currentTextIndex = 0;
     bool isFinished = false;
@@ -19,33 +21,17 @@ public class DialogueSystem : MonoBehaviour
     TypeTextAnimation typeText;
     DialogueUI dialogueUI;
 
-    STATE state;
+    public STATE state;
 
     void Awake()
     {
         typeText = FindObjectOfType<TypeTextAnimation>();
         dialogueUI = FindObjectOfType<DialogueUI>();
-
+        
         typeText.TypeFinished = OnTypeFinished;
     }
 
-    public void Next()
-    {
-        if(currentTextIndex == 0)
-        {
-            dialogueUI.Enable();
 
-        }
-
-        dialogueUI.SetName(dialogueData.talkScript[currentTextIndex].name);
-
-        typeText.fullText = dialogueData.talkScript[currentTextIndex++].text;
-        
-        if(currentTextIndex == dialogueData.talkScript.Count) isFinished = true; //verifica se o dialogo acabou
-
-        typeText.StartTyping(); //Inicia a animação
-        state = STATE.TYPING;
-    }
 
     void Start()
     {
@@ -68,6 +54,46 @@ public class DialogueSystem : MonoBehaviour
         }
 
     }
+    public void TalkTo(string npcName)
+    {
+        dialogueUI.Enable();
+        string dialogo;
+        switch (npcName)
+        {
+            case "Manzato":
+                dialogo = "TennisForTwo";
+                break;
+            default:
+                Debug.Log("Invalid");
+                dialogo = "";
+                break;
+        }
+
+        for (int i = 0; i < dialogueData.Count; i++)
+        {
+            if (dialogueData[i].name == dialogo)
+            {
+                this.currentScreenPlay = dialogueData[i];
+                Next();
+            }
+        }
+    }
+
+    void Next()
+    {
+        Debug.Log(currentScreenPlay);
+        if (currentScreenPlay != null)
+        {
+            dialogueUI.SetName(currentScreenPlay.talkScript[currentTextIndex].name);
+
+            typeText.fullText = currentScreenPlay.talkScript[currentTextIndex++].text;
+
+            if (currentTextIndex == currentScreenPlay.talkScript.Count) isFinished = true; //verifica se o dialogo acabou
+
+            typeText.StartTyping(); //Inicia a animação
+            state = STATE.TYPING;
+        }
+    }
 
     void OnTypeFinished()
     {
@@ -88,6 +114,7 @@ public class DialogueSystem : MonoBehaviour
                 state = STATE.DISABLED;
                 currentTextIndex = 0;
                 isFinished = false;
+                currentScreenPlay = null;
             }
         }
     }

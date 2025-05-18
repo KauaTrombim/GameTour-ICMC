@@ -6,11 +6,13 @@ public class Player : MonoBehaviour
 {
     //Inputs publicos
     public float Speed;
+    public float dialogueDistance; //distânica para consversar com npc
 
     //Dialogo
+    public List<GameObject> NPCS;
     DialogueSystem dialogueSys;
-    GameObject manzato;
     ShowClues showClues;
+
 
     //Movimentação
     private Animator anim;
@@ -28,36 +30,52 @@ public class Player : MonoBehaviour
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
-        manzato = GameObject.FindWithTag("Manzato");
     }
 
     private void FixedUpdate()
     {
+        Walk();
+
+        SearchNPC();
+    }
+
+    private void SearchNPC()
+    {
+        Vector2 playerPosition = transform.position;
+
+        foreach(GameObject npc in NPCS)
+        {
+            //Debug.Log(npc.name.GetType());
+            Vector2 npcPosition = npc.transform.position;
+            float distance = Vector2.Distance(playerPosition, npcPosition);
+
+            //area de diálogo com o NPC
+            if (distance <= dialogueDistance && dialogueSys.state == STATE.DISABLED)
+            {
+                showClues.showClueE();
+
+                //Aciona o diálogo
+                if (Input.GetKeyDown(KeyCode.R))
+                {
+                    dialogueSys.TalkTo(npc.name);
+                    showClues.hideClueE();
+                }
+            }
+            else
+            {
+                showClues.hideClueE();
+            }
+        }
+    }
+
+    private void Walk()
+    {
         Vector2 direction = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         rb.velocity = direction.normalized * Speed;
 
-        Vector2 playerPosition = transform.position;
-        Vector2 manzatoPosition = manzato.transform.position;
-        float distance = Vector2.Distance(playerPosition, manzatoPosition);
-
         animationChange(direction);
-
-        //area de diálogo com o manzato
-        if(distance <= 4f)
-        {
-            showClues.showClueE();
-            //Aciona o diálogo
-            if (Input.GetKeyDown(KeyCode.R))
-            {
-                dialogueSys.Next();
-            }
-        }
-        else
-        {
-            showClues.hideClueE();
-        }
     }
-    
+
     private void animationChange(Vector2 dir)
     {
         if (dir.x != 0)
