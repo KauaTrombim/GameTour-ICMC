@@ -19,6 +19,7 @@ public class Player : MonoBehaviour
     private Animator anim;
     private Rigidbody2D rb;
     private SpriteRenderer sprite;
+    public bool canWalk = true;
 
     void Awake()
     {
@@ -62,10 +63,17 @@ public class Player : MonoBehaviour
 
     private void Walk()
     {
-        Vector2 direction = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        rb.velocity = direction.normalized * Speed;
+        if (canWalk)
+        {
+            Vector2 direction = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+            rb.velocity = direction.normalized * Speed;
 
-        animationChange(direction);
+            animationChange(direction);
+        }
+        else {
+            rb.velocity = Vector2.zero;
+        }
+        
     }
 
     private void animationChange(Vector2 dir)

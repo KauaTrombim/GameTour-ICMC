@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public enum STATE
 {
@@ -14,17 +15,24 @@ public class DialogueSystem : MonoBehaviour
     //Dialogo
     public List<DialogueData> dialogueData;
     DialogueData currentScreenPlay;
+    private string npcName;
+
+    //Eventos
+    public static event Action<string> dialogueStart;
+    public static event Action<string> dialogueEnd;
 
     int currentTextIndex = 0;
     bool isFinished = false;
 
     TypeTextAnimation typeText;
     DialogueUI dialogueUI;
+    Player player;
 
     public STATE state;
 
     void Awake()
     {
+        player = FindObjectOfType<Player>();
         typeText = FindObjectOfType<TypeTextAnimation>();
         dialogueUI = FindObjectOfType<DialogueUI>();
         
@@ -54,9 +62,13 @@ public class DialogueSystem : MonoBehaviour
         }
 
     }
-    public void TalkTo(string npcName)
+    public void TalkTo(string npc_Name)
     {
         dialogueUI.Enable();
+        player.canWalk = false;
+        npcName = npc_Name;
+        dialogueStart?.Invoke(npcName);
+        
         string dialogo;
         switch (npcName)
         {
@@ -114,10 +126,12 @@ public class DialogueSystem : MonoBehaviour
             else
             {
                 dialogueUI.Disable();
+                player.canWalk = true;
                 state = STATE.DISABLED;
                 currentTextIndex = 0;
                 isFinished = false;
                 currentScreenPlay = null;
+                dialogueEnd?.Invoke(npcName);
             }
         }
     }
