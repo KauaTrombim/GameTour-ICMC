@@ -63,6 +63,9 @@ public class DialogueSystem : MonoBehaviour
             case "Manzato":
                 dialogo = "TennisForTwo";
                 break;
+            case "Claudio":
+                dialogo = "ComputerSpace";
+                break;
             default:
                 Debug.Log("Invalid");
                 dialogo = "";

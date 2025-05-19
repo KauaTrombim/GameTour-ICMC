@@ -51,6 +51,9 @@ TagManager:
   - name: Character
     uniqueID: 271771287
     locked: 0
+  - name: NPC
+    uniqueID: 3147047325
+    locked: 0
   - name: Collection
     uniqueID: 4240476417
     locked: 0
