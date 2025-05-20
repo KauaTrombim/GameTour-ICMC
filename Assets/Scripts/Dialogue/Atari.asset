@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5ec0fb6b8674b848ac26a1e926ae0e7, type: 3}
+  m_Name: Atari
+  m_EditorClassIdentifier: 
+  talkScript:
+  - name: "Voc\xEA"
+    text: "Ol\xE1, bom dia!"
+  - name: Manzato
+    text: Bom dia! Sou o professor Manzato. Veio visitar o museu?
+  - name: "Voc\xEA"
+    text: "Sim! Queria ver sobre a evolu\xE7\xE3o dos jogos eletr\xF4nicos, soube
+      que est\xE1 tendo uma exposi\xE7\xE3o aqui. Que pe\xE7a \xE9 essa que voc\xEA
+      estava olhando?"
+  - name: Manzato
+    text: "Ent\xE3o, esse aqui \xE9 o Atari 2600, e ele foi um console muito importante
+      para o come\xE7o dos jogos eletr\xF4nicos, principalmente na \xE1rea dos consoles
+      dom\xE9sticos."
+  - name: Manzato
+    text: "Antigamente, antes de ele ser proposto, os poucos jogos que existiam,
+      principalmente arcades, rodavam a partir de circuitos feitos para rodar jogos
+      espec\xEDficos n\xE9, que deixava o n\xFAmero de jogos diferentes que podiam
+      rodar no console bem menor."
+  - name: Manzato
+    text: "E a Atari j\xE1 tinha experi\xEAncia nessa \xE1rea, porque j\xE1 tinha
+      criado jogos de arcade. E a\xED, em 1975 eles come\xE7aram seus esfor\xE7os
+      para desenvolver esse console, que no come\xE7o era chamado de VCS."
+  - name: Manzato
+    text: "E tamb\xE9m, como eles queriam colocar essa ideia do microprocessador
+      no console n\xE9, eles escolheram colocar o MOS 6507 da MOS Technology que
+      tinha sido projetado na \xE9poca, que foi feito pra ser mais barato que os
+      outros."
+  - name: Manzato
+    text: "S\xF3 que acabou que n\xE3o foram os primeiros a fazer isso de colocar
+      microprocessadores n\xE9, porque a Fairchild lan\xE7ou seu Fairchild Channel
+      F antes, ent\xE3o eles que criaram o primeiro console com microprocessador."
+  - name: Manzato
+    text: Mas mesmo com isso o Atari 2600 foi mais influente no geral.
+  - name: "Voc\xEA"
+    text: "Estranho pensar que era t\xE3o dif\xEDcil assim para conseguir um processador
+      nessa \xE9poca\u2026"
+  - name: "Voc\xEA"
+    text: "Mas que tipos de jogos que eles lan\xE7aram pra ele?"
+  - name: Manzato
+    text: "Ent\xE3o, no come\xE7o, quando lan\xE7ou em 1977, o plano era s\xF3 importar
+      os jogos que a Atari j\xE1 tinha feito pra arcades e adapt\xE1-los para o 2600,
+      e junto com o console j\xE1 vinha o jogo Combat, que era bom at\xE9."
+  - name: Manzato
+    text: "Mas claro que com o tempo eles contrataram muitos programadores e engenheiros
+      pra fazer um n\xFAmero bem maior de jogos originais n\xE9, e alguns meio copiados
+      tamb\xE9m."
+  - name: Manzato
+    text: "E as vendas do console n\xE3o foram muito grandes nos primeiros anos\u2026
+      mesmo sendo o console mais vendido na temporada de f\xE9rias n\xE9, a Atari
+      ainda ficou em uma situa\xE7\xE3o meio apertada nesse tempo."
+  - name: Manzato
+    text: "At\xE9 que em 1980, ap\xF3s a cria\xE7\xE3o de uma adapta\xE7\xE3o do
+      jogo de arcade \u201CSpace Invaders\u201D foi feita pro Atari 2600, que ent\xE3o
+      o console explodiu em vendas. S\xF3 esse lan\xE7amento rendeu para Atari mais
+      de $100 milh\xF5es, acredita?"
+  - name: "Voc\xEA"
+    text: "Nossa! S\xF3 esse jogo?"
+  - name: Manzato
+    text: "Sim, sua pr\xF3pria vers\xE3o original de arcade da Taito foi um fen\xF4meno,
+      ent\xE3o era natural que isso acontecesse tamb\xE9m."
+  - name: Manzato
+    text: "Mas depois de uma era dourada para a Atari, at\xE9 1981, a empresa come\xE7ou
+      a entrar em decl\xEDnio, principalmente por conta do n\xFAmero de competidores
+      que apareceram, o que piorou quando aconteceu o \u201Cvideogame crash\u201D
+      de 1983."
+  - name: Manzato
+    text: "E a\xED acabou ent\xE3o a relev\xE2ncia do 2600 no mercado, j\xE1 que
+      muitos outros consoles mais capazes foram lan\xE7ados."
+  - name: "Voc\xEA"
+    text: Uau, realmente interessante. Obrigado, Manzato.

@@ -73,7 +73,7 @@ public class DialogueSystem : MonoBehaviour
         switch (npcName)
         {
             case "Manzato":
-                dialogo = "TennisForTwo";
+                dialogo = "Atari";
                 break;
             case "Claudio":
                 dialogo = "ComputerSpace";
@@ -81,6 +81,7 @@ public class DialogueSystem : MonoBehaviour
             default:
                 Debug.Log("Invalid");
                 dialogo = "";
+                return;
                 break;
         }
 
@@ -96,12 +97,28 @@ public class DialogueSystem : MonoBehaviour
 
     void Next()
     {
-        Debug.Log(currentScreenPlay);
         if (currentScreenPlay != null)
         {
-            dialogueUI.SetName(currentScreenPlay.talkScript[currentTextIndex].name);
+            string path = "Sprite/characters/inUI/" + npcName;
+            Sprite sprite = Resources.Load<Sprite>(path);
 
+            if (currentScreenPlay.talkScript[currentTextIndex].name == "Você")
+            {
+                dialogueUI.photo.sprite = null;
+            }
+            else
+            {
+                dialogueUI.photo.sprite = sprite;
+            }
+
+
+
+            
+            dialogueUI.SetName(currentScreenPlay.talkScript[currentTextIndex].name);
             typeText.fullText = currentScreenPlay.talkScript[currentTextIndex++].text;
+            
+            
+
 
             if (currentTextIndex == currentScreenPlay.talkScript.Count) isFinished = true; //verifica se o dialogo acabou
 

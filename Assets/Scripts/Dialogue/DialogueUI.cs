@@ -9,6 +9,7 @@ public class DialogueUI : MonoBehaviour
 {
     //Itens do dialogo
     public Image backgroud;
+    public Image photo;
     TextMeshProUGUI nameText;
     TextMeshProUGUI talkText;
 
@@ -22,6 +23,7 @@ public class DialogueUI : MonoBehaviour
         backgroud = transform.GetChild(0).GetComponent<Image>();
         nameText = transform.GetChild(1).GetComponent<TextMeshProUGUI>();
         talkText = transform.GetChild(2).GetComponent<TextMeshProUGUI>();
+        photo = transform.GetChild(3).GetComponent<Image>();
 
         canvasGroup = GetComponent<CanvasGroup>();
         canvasGroup.alpha = 0; //Inicia a caixa já fechada
@@ -46,6 +48,7 @@ public class DialogueUI : MonoBehaviour
     public void Enable()
     {
         backgroud.fillAmount = 0;
+        photo.fillAmount = 0;
         open = true;
 
         canvasGroup.alpha = 1;

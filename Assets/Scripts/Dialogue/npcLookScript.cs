@@ -50,7 +50,7 @@ public class npcLookScript : MonoBehaviour
 
     void searchSprite(string name)
     {
-        string path = "Sprite/characters/" + name;
+        string path = "Sprite/characters/inGame/" + name;
         Sprite[] loadedSprites = Resources.LoadAll<Sprite>(path);
 
         spriteList = new Sprite[4];
