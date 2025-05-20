@@ -117,7 +117,7 @@ public class DialogueSystem : MonoBehaviour
 
     void Waiting()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && player.canAct)
         {
             if (!isFinished)
             {
@@ -137,7 +137,7 @@ public class DialogueSystem : MonoBehaviour
     }
     void Typing() 
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && player.canAct)
         {
             typeText.Skip();
             state = STATE.WAITING;

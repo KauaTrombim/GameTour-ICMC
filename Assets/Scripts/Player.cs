@@ -20,6 +20,7 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb;
     private SpriteRenderer sprite;
     public bool canWalk = true;
+    public bool canAct = true;
 
     void Awake()
     {
@@ -43,7 +44,7 @@ public class Player : MonoBehaviour
 
     private void SearchNPC()
     {
-        if (canTalk && dialogueSys.state == STATE.DISABLED)
+        if (canAct && canTalk && dialogueSys.state == STATE.DISABLED)
         {
             showClues.showClueE();
 
@@ -63,7 +64,7 @@ public class Player : MonoBehaviour
 
     private void Walk()
     {
-        if (canWalk)
+        if (canAct && canWalk)
         {
             Vector2 direction = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
             rb.velocity = direction.normalized * Speed;
@@ -72,6 +73,7 @@ public class Player : MonoBehaviour
         }
         else {
             rb.velocity = Vector2.zero;
+            anim.SetBool("walking", false);
         }
         
     }
