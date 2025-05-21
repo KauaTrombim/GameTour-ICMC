@@ -78,13 +78,19 @@ public class DialogueSystem : MonoBehaviour
             case "Claudio":
                 dialogo = "ComputerSpace";
                 break;
-            default:
-                Debug.Log("Invalid");
+            case "Duzi":
+                dialogo = "SNES";
+                break;
+            case "Bonato":
                 dialogo = "";
-                return;
+                break;
+            case "Simoes":
+                dialogo = "";
+                break;
+            default:
+                dialogo = "";
                 break;
         }
-
         for (int i = 0; i < dialogueData.Count; i++)
         {
             if (dialogueData[i].name == dialogo)
@@ -111,15 +117,9 @@ public class DialogueSystem : MonoBehaviour
                 dialogueUI.photo.sprite = sprite;
             }
 
-
-
-            
             dialogueUI.SetName(currentScreenPlay.talkScript[currentTextIndex].name);
             typeText.fullText = currentScreenPlay.talkScript[currentTextIndex++].text;
             
-            
-
-
             if (currentTextIndex == currentScreenPlay.talkScript.Count) isFinished = true; //verifica se o dialogo acabou
 
             typeText.StartTyping(); //Inicia a animação
