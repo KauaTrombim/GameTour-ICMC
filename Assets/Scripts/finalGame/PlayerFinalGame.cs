@@ -9,7 +9,7 @@ public class PlayerFinalGame : MonoBehaviour
     private SpriteRenderer sprite;
 
     public float Speed;
-    float fireRate = 0.5f;
+    public float fireRate = 0.5f;
     float nextFire;
 
     beltManager beltManagement;
@@ -30,8 +30,8 @@ public class PlayerFinalGame : MonoBehaviour
     void Update()
     {
         Walk();
-
-        if (Input.GetKeyDown(KeyCode.W) && Time.time >= nextFire)
+        
+        if (Input.GetKeyDown(KeyCode.W) && Time.time > nextFire)
         {
             Shot();
         }
@@ -47,6 +47,6 @@ public class PlayerFinalGame : MonoBehaviour
     {
         Instantiate(bulletPrefab, transform.position, Quaternion.identity);
         nextFire = Time.time + fireRate;
-        Debug.Log("Atirei");
+        anim.SetTrigger("hasShot");
     }
 }

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7070205233113727242}
   - component: {fileID: 7070205233113727247}
   - component: {fileID: 7070205233113727233}
-  - component: {fileID: 7070205233113727246}
+  - component: {fileID: 1358746699555876749}
   m_Layer: 0
   m_Name: barata-normal
   m_TagString: Untagged
@@ -144,7 +144,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: -0.1}
   m_Size: {x: 0.7, y: 1.3}
   m_Direction: 0
---- !u!114 &7070205233113727246
+--- !u!114 &1358746699555876749
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -156,3 +156,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e77db803477826409aaf16908ba8873, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  step: 0.005
+  expTime: 0.6
