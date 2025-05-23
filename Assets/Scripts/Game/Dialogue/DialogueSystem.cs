@@ -61,6 +61,10 @@ public class DialogueSystem : MonoBehaviour
                 break;
         }
 
+        if (Input.GetKeyDown(KeyCode.Escape)){
+            CloseAll();
+        }
+
     }
     public void TalkTo(string npc_Name)
     {
@@ -105,18 +109,20 @@ public class DialogueSystem : MonoBehaviour
     {
         if (currentScreenPlay != null)
         {
-            string path = "Sprite/characters/inUI/" + npcName;
-            Sprite sprite = Resources.Load<Sprite>(path);
-
+            string path;
             if (currentScreenPlay.talkScript[currentTextIndex].name == "Você")
             {
-                dialogueUI.photo.sprite = null;
+                path = "Sprite/characters/inUI/Pmale";
             }
             else
             {
-                dialogueUI.photo.sprite = sprite;
+                path = "Sprite/characters/inUI/"+ npcName;
             }
 
+             
+            Sprite sprite = Resources.Load<Sprite>(path);
+
+            dialogueUI.photo.sprite = sprite;
             dialogueUI.SetName(currentScreenPlay.talkScript[currentTextIndex].name);
             typeText.fullText = currentScreenPlay.talkScript[currentTextIndex++].text;
             
@@ -142,13 +148,7 @@ public class DialogueSystem : MonoBehaviour
             }
             else
             {
-                dialogueUI.Disable();
-                player.canWalk = true;
-                state = STATE.DISABLED;
-                currentTextIndex = 0;
-                isFinished = false;
-                currentScreenPlay = null;
-                dialogueEnd?.Invoke(npcName);
+                CloseAll();
             }
         }
     }
@@ -159,5 +159,16 @@ public class DialogueSystem : MonoBehaviour
             typeText.Skip();
             state = STATE.WAITING;
         }
+    }
+
+    void CloseAll()
+    {
+        dialogueUI.Disable();
+        player.canWalk = true;
+        state = STATE.DISABLED;
+        currentTextIndex = 0;
+        isFinished = false;
+        currentScreenPlay = null;
+        dialogueEnd?.Invoke(npcName);
     }
 }

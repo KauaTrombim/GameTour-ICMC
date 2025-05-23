@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 5483c2358c49b9c469c0c246b3c5b6ab
+guid: b54817adc344ccc45b19c7ebe83749a9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6143879231999495449
-    second: simoes_0
+      213: 2410564362527057654
+    second: "sim\xF5es_0"
   - first:
-      213: -7555981391226659883
-    second: simoes_1
+      213: 2673811519770472972
+    second: "sim\xF5es_1"
   - first:
-      213: -5349155316033465179
-    second: simoes_2
+      213: -1395756663569761561
+    second: "sim\xF5es_2"
   - first:
-      213: -6677553967463196989
-    second: simoes_3
+      213: -1119047050511549875
+    second: "sim\xF5es_3"
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -104,7 +104,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: simoes_0
+      name: "sim\xF5es_0"
       rect:
         serializedVersion: 2
         x: 0
@@ -118,14 +118,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91dca3e1c91734550800000000000000
-      internalID: 6143879231999495449
+      spriteID: 6f624a8148b047120800000000000000
+      internalID: 2410564362527057654
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: simoes_1
+      name: "sim\xF5es_1"
       rect:
         serializedVersion: 2
         x: 16
@@ -139,14 +139,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5db197e35f2c32790800000000000000
-      internalID: -7555981391226659883
+      spriteID: c02344829694b1520800000000000000
+      internalID: 2673811519770472972
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: simoes_2
+      name: "sim\xF5es_2"
       rect:
         serializedVersion: 2
         x: 32
@@ -160,14 +160,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a4de63c49bf3c5b0800000000000000
-      internalID: -5349155316033465179
+      spriteID: 7ea3a03a5b641ace0800000000000000
+      internalID: -1395756663569761561
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: simoes_3
+      name: "sim\xF5es_3"
       rect:
         serializedVersion: 2
         x: 48
@@ -181,8 +181,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c61bd8bb009453a0800000000000000
-      internalID: -6677553967463196989
+      spriteID: d4a7f43f2a85870f0800000000000000
+      internalID: -1119047050511549875
       vertices: []
       indices: 
       edges: []

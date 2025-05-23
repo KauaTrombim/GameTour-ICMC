@@ -11,18 +11,20 @@ public class menuActivation : MonoBehaviour
     public string scene;
 
     Player player;
+    DialogueSystem dialogueSys;
 
     // Start is called before the first frame update
     void Start()
     {
         player = FindObjectOfType<Player>();
+        dialogueSys = FindObjectOfType<DialogueSystem>();
         Time.timeScale = 1f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && dialogueSys.state == STATE.DISABLED)
         {
             if (!isPaused)
             {
