@@ -6,34 +6,46 @@ using UnityEngine.UI;
 public class ShowClues : MonoBehaviour
 {
     Image press_e;
-    CanvasGroup canvasGroup;
+    Image press_r;
+    CanvasGroup canvasGroupE;
+    CanvasGroup canvasGroupR;
 
     // Start is called before the first frame update
     void Start()
     {
         press_e = transform.GetChild(0).GetComponent<Image>();
+        press_r = transform.GetChild(1).GetComponent<Image>();
 
-        canvasGroup = GetComponent<CanvasGroup>();
-        canvasGroup.alpha = 0;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        canvasGroupE = press_e.GetComponent<CanvasGroup>();
+        canvasGroupR = press_r.GetComponent<CanvasGroup>();
+        canvasGroupE.alpha = 0;
+        canvasGroupR.alpha = 0;
     }
 
     public void showClueE()
     {
-        canvasGroup.alpha = 1;
-        canvasGroup.interactable = true;
-        canvasGroup.blocksRaycasts = true;
+        canvasGroupE.alpha = 1;
+        canvasGroupE.interactable = true;
+        canvasGroupE.blocksRaycasts = true;
     }
 
     public void hideClueE()
     {
-        canvasGroup.alpha = 0;
-        canvasGroup.interactable = false;
-        canvasGroup.blocksRaycasts = false;
+        canvasGroupE.alpha = 0;
+        canvasGroupE.interactable = false;
+        canvasGroupE.blocksRaycasts = false;
+    }
+
+    public void showClueR()
+    {
+        canvasGroupR.alpha = 1;
+        canvasGroupR.interactable = true;
+        canvasGroupR.blocksRaycasts = true;
+    }
+    public void hideClueR()
+    {
+        canvasGroupR.alpha = 0;
+        canvasGroupR.interactable = false;
+        canvasGroupR.blocksRaycasts = false;
     }
 }

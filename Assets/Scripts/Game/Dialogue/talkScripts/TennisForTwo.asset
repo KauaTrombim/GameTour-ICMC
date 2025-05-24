@@ -13,12 +13,47 @@ MonoBehaviour:
   m_Name: TennisForTwo
   m_EditorClassIdentifier: 
   talkScript:
-  - name: Manzato
-    text: "Ol\xE1, Jovem. Animado para conhecer mais sobre jogos aqui no Museu? Meu
-      nome \xE9 Marcelo Manzato, e o seu?"
   - name: "Voc\xEA"
-    text: "Ol\xE1! me chamo null. Ainda n\xE3o sei o que esperar... O que \xE9 essa
-      maquina gigante atr\xE1s de voc\xEA?"
-  - name: Manzato
-    text: "Otima pergunta, null. Esse \xE9 o primeiro jogo j\xE1 feito, chama-se
-      Tennis for Two."
+    text: "E a\xED! Que computador gigante \xE9 esse a\xED do seu lado?"
+  - name: Rudinei
+    text: "Opa, tudo bem? Esse aqui \xE9 o Tennis for Two! Ele \xE9 considerado o
+      primeiro jogo da hist\xF3ria dos videogames, uma rel\xEDquia."
+  - name: "Voc\xEA"
+    text: "S\xE9rio? Ent\xE3o ele deve ser bem antigo, n\xE9?"
+  - name: Rudinei
+    text: "Sim! Foi criado em 1958, no laborat\xF3rio de Brookhaven, pelo f\xEDsico
+      americano William Higinbotham. Naquela \xE9poca, a maior parte do circuito
+      era feita com v\xE1lvulas e rel\xE9s\u2026 s\xF3 o monitor, um oscilosc\xF3pio,
+      usava transistores."
+  - name: "Voc\xEA"
+    text: Nossa, que interessante! E como era o jogo?
+  - name: Rudinei
+    text: "Era bem simples: uma linha horizontal mostrava o ch\xE3o da quadra, uma
+      linha vertical era a rede\u2026 e a bola era s\xF3 um pontinho luminoso que
+      pulava de um lado pro outro!"
+  - name: "Voc\xEA"
+    text: "E o que s\xE3o essas caixinhas de metal a\xED?"
+  - name: Rudinei
+    text: "Esses s\xE3o os controles! Foram feitos dois de alum\xEDnio, bem b\xE1sicos.
+      Cada um tinha um bot\xE3o pra rebater a bola, e um knob pra ajustar o \xE2ngulo
+      do golpe."
+  - name: "Voc\xEA"
+    text: E de onde surgiu a ideia de fazer esse jogo?
+  - name: Rudinei
+    text: "O laborat\xF3rio fazia uma exposi\xE7\xE3o anual para o p\xFAblico. Era
+      um tour t\xE9cnico, mostrando as m\xE1quinas de pesquisa\u2026 meio parado,
+      n\xE9? Ent\xE3o o Higinbotham quis criar algo que fosse mais divertido e que
+      mostrasse o poder de c\xE1lculo dos computadores.\n"
+  - name: "Voc\xEA"
+    text: "Ah, entendi, ele queria criar algo que prendesse mais a aten\xE7\xE3o
+      do p\xFAblico."
+  - name: Rudinei
+    text: "Exatamente! Ele percebeu que podia usar o Donner Model 30, um computador
+      que calculava trajet\xF3rias de m\xEDsseis, para simular a trajet\xF3ria de
+      uma bola na tela. Assim nasceu o conceito do jogo!"
+  - name: "Voc\xEA"
+    text: "Que genial! Ent\xE3o o Tennis for Two foi um jogo revolucion\xE1rio?"
+  - name: Rudinei
+    text: "Mais ou menos\u2026 ele n\xE3o trouxe uma grande revolu\xE7\xE3o tecnol\xF3gica,
+      mas foi o primeiro jogo de computador criado apenas pra entreter! E isso foi
+      o suficiente pra abrir caminho pra toda a ind\xFAstria de videogames!"

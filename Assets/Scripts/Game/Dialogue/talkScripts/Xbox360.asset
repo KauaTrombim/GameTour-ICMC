@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5ec0fb6b8674b848ac26a1e926ae0e7, type: 3}
+  m_Name: Xbox360
+  m_EditorClassIdentifier: 
+  talkScript:
+  - name: "Voc\xEA"
+    text: "Ent\xE3o esse aqui \xE9 outro Xbox?"
+  - name: "Voc\xEA"
+    text: "Exato! Esse aqui \xE9 o Xbox 360, o sucessor do primeiro Xbox. Foi lan\xE7ado
+      em 2005 e se tornou um dos consoles mais importantes da hist\xF3ria!"
+  - name: "Voc\xEA"
+    text: "S\xE9rio? O que ele teve de t\xE3o especial?"
+  - name: "Voc\xEA"
+    text: "Muita coisa! Ele consolidou a ideia de jogos online com a Xbox Live, popularizou
+      o conte\xFAdo digital, como DLCs e jogos pra baixar, e ele que deu in\xEDcio
+      a era HD dos consoles!\n"
+  - name: "Voc\xEA"
+    text: "Nossa, ent\xE3o ele foi meio que o come\xE7o da era moderna dos games?"
+  - name: "Voc\xEA"
+    text: "D\xE1 pra dizer que sim! Al\xE9m disso, ele foi o primeiro console a apostar
+      pesado em achievements, as famosas \"conquistas\" que motivavam os jogadores
+      a completar desafios extras nos games."
+  - name: "Voc\xEA"
+    text: "Ah, at\xE9 hoje a galera curte platinar os games, n\xE9?"
+  - name: "Voc\xEA"
+    text: "Muito! E n\xE3o podemos esquecer que o Xbox 360 foi um dos primeiros a
+      investir em jogos indie, dando espa\xE7o pra desenvolvedores pequenos criarem
+      projetos incr\xEDveis."
+  - name: "Voc\xEA"
+    text: "Caramba\u2026 e quais foram os jogos mais famosos dele?"
+  - name: "Voc\xEA"
+    text: "V\xE1rios! Mas os mais marcantes s\xE3o as franquias Halo, Gears of War
+      e Forza Motorsport. Esses tr\xEAs definiram a identidade do Xbox 360 juntamente
+      com o Kinect.\n"
+  - name: "Voc\xEA"
+    text: "Kinect? Isso \xE9 aquela c\xE2mera, n\xE9?"
+  - name: "Voc\xEA"
+    text: "Isso mesmo! O Kinect usava c\xE2meras e sensores de movimento pra capturar
+      os gestos e movimentos do jogador em tempo real. Voc\xEA jogava s\xF3 com o
+      corpo! Ele teve jogos como o Just Dance e Kinect Adventures, que trouxe uma
+      experiencia totalmente nova."
+  - name: "Voc\xEA"
+    text: "Ent\xE3o ele deve ter feito bastante sucesso!"
+  - name: "Voc\xEA"
+    text: "E muito! O Xbox 360 vendeu mais de 85 milh\xF5es de unidades e foi essencial
+      pra estabelecer a Microsoft como uma gigante nos consoles!"

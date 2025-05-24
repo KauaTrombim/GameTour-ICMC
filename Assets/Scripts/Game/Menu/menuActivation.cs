@@ -12,19 +12,22 @@ public class menuActivation : MonoBehaviour
 
     Player player;
     DialogueSystem dialogueSys;
+    showWindow showInfoWindow;
 
     // Start is called before the first frame update
     void Start()
     {
         player = FindObjectOfType<Player>();
         dialogueSys = FindObjectOfType<DialogueSystem>();
+        showInfoWindow = FindObjectOfType<showWindow>();
         Time.timeScale = 1f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && dialogueSys.state == STATE.DISABLED)
+        //Alterar a logica para evitar que pause o jogo dentro do painel
+        if (Input.GetKeyDown(KeyCode.Escape) && dialogueSys.state == STATE.DISABLED && showInfoWindow.isActive == false)
         {
             if (!isPaused)
             {

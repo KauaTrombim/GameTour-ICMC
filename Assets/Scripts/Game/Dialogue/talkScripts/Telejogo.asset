@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5ec0fb6b8674b848ac26a1e926ae0e7, type: 3}
+  m_Name: Telejogo
+  m_EditorClassIdentifier: 
+  talkScript:
+  - name: "Voc\xEA"
+    text: "Ol\xE1! Que console antigo \xE9 esse aqui?"
+  - name: Simoes
+    text: "Esse \xE9 o Telejogo! Um dos primeiros consoles de videogame produzidos
+      no Brasil, lan\xE7ado em 1977 pela Philco."
+  - name: "Voc\xEA"
+    text: "S\xE9rio? Nem sabia que o Brasil j\xE1 fazia consoles naquela \xE9poca!\n"
+  - name: Simoes
+    text: "Pois \xE9! Apesar das dificuldades econ\xF4micas e pol\xEDticas da \xE9poca,
+      como o regime militar, a infla\xE7\xE3o e as pol\xEDticas de reserva de mercado,
+      o Telejogo conseguiu nascer! Ele \xE9 um clone de Pong, mas totalmente desenvolvido
+      por engenheiros brasileiros."
+  - name: "Voc\xEA"
+    text: E quais jogos ele tinha?
+  - name: Simoes
+    text: "O Telejogo vinha com tr\xEAs jogos: T\xEAnis, Pared\xE3o e Futebol.\n"
+  - name: "Voc\xEA"
+    text: 'E como eram esses jogos?
+
+'
+  - name: Simoes
+    text: "Eles eram bem simples. No T\xEAnis, dois jogadores controlavam raquetes
+      que tinham que rebater uma bolinha quadrada. Se o advers\xE1rio n\xE3o conseguia
+      rebater, voc\xEA ganhava ponto. E a bola ia ficando cada vez mais r\xE1pida!"
+  - name: "Voc\xEA"
+    text: "Legal! E o Pared\xE3o?"
+  - name: Simoes
+    text: "Mesmo esquema do T\xEAnis, s\xF3 que jogado sozinho, contra a parede,
+      tentando rebater a bolinha o m\xE1ximo poss\xEDvel."
+  - name: "Voc\xEA"
+    text: E o Futebol?
+  - name: Simoes
+    text: "Parecido com o T\xEAnis tamb\xE9m, mas com v\xE1rios ret\xE2ngulos na
+      tela, como se fossem jogadores. E pra fazer o gol, tinha que acertar a bola
+      pelos buracos no meio do campo, sem goleiro!"
+  - name: "Voc\xEA"
+    text: "Parece bem interessante para a \xE9poca! E como era o controle?"
+  - name: Simoes
+    text: "O jogo usava um dial, que \xE9 tipo uma rodinha pra girar e movimentar
+      o tra\xE7o pra cima ou pra baixo."
+  - name: "Voc\xEA"
+    text: "Maneiro demais! E por que esse console est\xE1 aqui no museu?"
+  - name: Simoes
+    text: "Porque ele marcou o in\xEDcio da ind\xFAstria de videogames no Brasil!
+      Mesmo sendo um clone, foi um projeto 100% nacional, lan\xE7ado numa \xE9poca
+      super complicada pro pa\xEDs."

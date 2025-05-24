@@ -11,9 +11,11 @@ public class Player : MonoBehaviour
     public GameObject NPCS;
     DialogueSystem dialogueSys;
     ShowClues showClues;
+    showWindow showInfoWindow;
     public string npcName;
     public bool canTalk = false;
     public bool inputBlocked = false;
+    public bool canRead = false;
 
     //Movimentação
     private Animator anim;
@@ -26,6 +28,7 @@ public class Player : MonoBehaviour
     {
         dialogueSys = FindObjectOfType<DialogueSystem>();
         showClues = FindObjectOfType<ShowClues>();
+        showInfoWindow = FindObjectOfType<showWindow>();
     }
 
     void Start()
@@ -40,6 +43,8 @@ public class Player : MonoBehaviour
         Walk();
 
         SearchNPC();
+
+        SearchBooth();
     }
 
     private void SearchNPC()
@@ -59,6 +64,24 @@ public class Player : MonoBehaviour
         else
         {
             showClues.hideClueE();
+        }
+    }
+
+    private void SearchBooth()
+    {
+        if (canRead)
+        {
+            showClues.showClueR();
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                Debug.Log("apertou");
+                showInfoWindow.showInfoWindow();
+                showInfoWindow.isActive = true;
+            }
+        }
+        else
+        {
+            showClues.hideClueR();
         }
     }
 

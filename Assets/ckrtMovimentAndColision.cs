@@ -27,7 +27,7 @@ public class ckrtMovimentAndColision : MonoBehaviour
     }
 
 
-    async void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log("Bateu em "+ other.name);
         colision.enabled = false;

@@ -16,6 +16,7 @@ public class DialogueSystem : MonoBehaviour
     public List<DialogueData> dialogueData;
     DialogueData currentScreenPlay;
     private string npcName;
+    public string[] npcs = new string[8];
 
     //Eventos
     public static event Action<string> dialogueStart;
@@ -61,7 +62,7 @@ public class DialogueSystem : MonoBehaviour
                 break;
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape)){
+        if (Input.GetKeyDown(KeyCode.Escape) && state != STATE.DISABLED){
             CloseAll();
         }
 
@@ -72,37 +73,16 @@ public class DialogueSystem : MonoBehaviour
         player.canWalk = false;
         npcName = npc_Name;
         dialogueStart?.Invoke(npcName);
-        
-        string dialogo;
-        switch (npcName)
+
+        for(int i = 0; i < npcs.Length; i++) 
         {
-            case "Manzato":
-                dialogo = "Atari";
-                break;
-            case "Claudio":
-                dialogo = "ComputerSpace";
-                break;
-            case "Duzi":
-                dialogo = "SNES";
-                break;
-            case "Bonato":
-                dialogo = "";
-                break;
-            case "Simoes":
-                dialogo = "";
-                break;
-            default:
-                dialogo = "";
-                break;
-        }
-        for (int i = 0; i < dialogueData.Count; i++)
-        {
-            if (dialogueData[i].name == dialogo)
+            if (npcs[i] == npcName)
             {
                 this.currentScreenPlay = dialogueData[i];
-                Next();
             }
         }
+
+        Next();
     }
 
     void Next()

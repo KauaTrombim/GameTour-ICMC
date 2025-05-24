@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5ec0fb6b8674b848ac26a1e926ae0e7, type: 3}
+  m_Name: Xbox
+  m_EditorClassIdentifier: 
+  talkScript:
+  - name: "Voc\xEA"
+    text: "E a\xED! Que console \xE9 esse a\xED?"
+  - name: Diego
+    text: "Opa! Esse aqui \xE9 o Xbox, o primeiro videogame da Microsoft! Foi lan\xE7ado
+      em 2001 e marcou a estreia da empresa no mundo dos consoles."
+  - name: "Voc\xEA"
+    text: "S\xE9rio? E como foi essa estreia?"
+  - name: Diego
+    text: "Foi bem impactante! O Xbox trouxe um hardware super potente pra \xE9poca,
+      com um disco r\xEDgido interno e suporte \xE0 internet para jogos online, o
+      que era bem inovador!"
+  - name: "Voc\xEA"
+    text: "Ent\xE3o j\xE1 era poss\xEDvel jogar online com ele?"
+  - name: Diego
+    text: 'Sim! A Microsoft criou a Xbox Live, que permitia que jogadores do mundo
+      todo se conectassem pra jogar online. Isso mudou completamente a forma como
+      os games eram jogados!
+
+'
+  - name: "Voc\xEA"
+    text: Caramba! E qual foi o jogo que mais marcou nesse console?
+  - name: Diego
+    text: "Sem d\xFAvidas o Halo: Combat Evolved. Foi o jogo que definiu o Xbox e
+      se tornou uma das suas principais series de exclusivos, vendendo quase 5 milh\xF5es
+      de c\xF3pias!"
+  - name: "Voc\xEA"
+    text: 'E como surgiu a ideia da Microsoft fazer um console?
+
+'
+  - name: Diego
+    text: "A ideia veio quando eles perceberam que a Sony, com o PlayStation 2, estava
+      amea\xE7ando o dom\xEDnio dos PCs no mundo dos jogos. Ent\xE3o decidiram criar
+      um console pr\xF3prio, pra competir de igual pra igual."
+  - name: "Voc\xEA"
+    text: "E conseguiram, n\xE9?"
+  - name: Diego
+    text: "Com certeza! Apesar de ser o primeiro console deles, o Xbox vendeu mais
+      de 24 milh\xF5es de unidades e criou v\xE1rias franquias famosas! Se voc\xEA
+      quiser eu posso te mostrar o Xbox 360 tamb\xE9m.\n"

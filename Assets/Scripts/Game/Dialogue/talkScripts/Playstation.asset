@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5ec0fb6b8674b848ac26a1e926ae0e7, type: 3}
+  m_Name: Playstation
+  m_EditorClassIdentifier: 
+  talkScript:
+  - name: "Voc\xEA"
+    text: "Oi! Esse console eu conhe\xE7o. O famoso Playstation!"
+  - name: "Voc\xEA"
+    text: "Sim, ele mesmo, o primeiro videogame da Sony! Ele revolucionou a ind\xFAstria
+      e vendeu mais de 100 milh\xF5es de unidades no mundo todo!"
+  - name: "Voc\xEA"
+    text: "Opa, tudo bem? Esse daqui \xE9 o Playstation 1, o primeiro videogame da
+      Sony! Ele revolucionou a ind\xFAstria e vendeu mais de 100 milh\xF5es de unidades
+      no mundo todo!"
+  - name: "Voc\xEA"
+    text: Caramba! O que eles fizeram para ter tanto sucesso?
+  - name: "Voc\xEA"
+    text: "Eles apostaram nos CDs ao inv\xE9s dos tradicionais cartuchos. Isso deixava
+      a produ\xE7\xE3o mais barata e permitia armazenar muito mais conte\xFAdo, possibilitando
+      a cria\xE7\xE3o de jogos mais longos e complexos, o que conquistou muitos jogadores!\nba!
+      O que eles fizeram para ter tanto sucesso?"
+  - name: "Voc\xEA"
+    text: 'Nossa, que esperto! Mas como a Sony entrou nessa de videogames?
+
+'
+  - name: "Voc\xEA"
+    text: "Essa parte \xE9 curiosa! A Sony estava ajudando a Nintendo a criar um
+      acess\xF3rio de CD para o Super Nintendo. Mas a Nintendo cancelou o projeto.
+      A\xED a Sony ficou com tudo que tinha desenvolvido\u2026 e resolveu lan\xE7ar
+      o PlayStation por conta pr\xF3pria, l\xE1 em 1994.\n\n"
+  - name: "Voc\xEA"
+    text: Que reviravolta, hein! E quais foram os jogos mais famosos do PS1?
+  - name: "Voc\xEA"
+    text: "Ah, v\xE1rios marcaram \xE9poca! Como Final Fantasy VII, Metal Gear Solid,
+      Resident Evil, Gran Turismo e Crash Bandicoot! Todos eles ajudaram a consolidar
+      o sucesso do console e se tornaram cl\xE1ssicos."
+  - name: "Voc\xEA"
+    text: Nossa, que saudades de jogar Crash!

@@ -16,60 +16,56 @@ MonoBehaviour:
   - name: "Voc\xEA"
     text: "Oi, tudo bem? que pe\xE7a \xE9 essa a\xED?"
   - name: Duzi
-    text: "Ol\xE1! Esse \xE9 o Super Nintendo, ou SNES. Lan\xE7ado em 1990 no Jap\xE3o,
-      ele fez parte da quarta gera\xE7\xE3o de consoles e foi o grande rival do Sega
-      Genesis, vendendo quase 50 milh\xF5es de unidades! At\xE9 hoje ele \xE9 um
-      console muito querido pelos gamers."
+    text: "Opa! Esse aqui \xE9 o Super Nintendo, ou SNES! Lan\xE7ado em 1990, ele
+      foi o grande rival do Sega Genesis. Vendeu quase 50 milh\xF5es de unidades!
+      At\xE9 hoje \xE9 um dos consoles mais queridos pelos gamers."
   - name: "Voc\xEA"
     text: 'Serio? Mas por que ele fez tanto sucesso assim? '
   - name: Duzi
-    text: "Ah! \xE9 f\xE1cil de explicar.\r\n"
+    text: "Ah, f\xE1cil! O SNES tinha gr\xE1ficos incr\xEDveis pra \xE9poca e uma
+      qualidade de \xE1udio impressionante! Muitas das trilhas sonoras cl\xE1ssicas
+      que os gamers lembram at\xE9 hoje vieram dele."
   - name: Duzi
-    text: "Ele tinha gr\xE1ficos incr\xEDveis para a \xE9poca, e uma alt\xEDssima
-      qualidade de \xE1udio, que pode ser vista nas marcantes trilhas sonoras de
-      seus jogos."
-  - name: Duzi
-    text: "Al\xE9m disso, a Nintendo investiu muito em jogos pr\xF3prios. Quem n\xE3o
-      se lembra do Super Mario World? E ainda tinha os jogos exclusivos, como as
-      cl\xE1ssicas s\xE9ries Mega Man, Final Fantasy e Dragon Quest.\r\n"
+    text: "A Nintendo tamb\xE9m investiu muito nos seus jogos pr\xF3prios: quem n\xE3o
+      lembra de Super Mario World? E al\xE9m dele, tinha cl\xE1ssicos exclusivos
+      para o SNES como as s\xE9ries Mega Man, Final Fantasy e Dragon Quest!"
   - name: "Voc\xEA"
-    text: "Legal! Mas no que ele inovou? Outros consoles dessa \xE9poca tamb\xE9m
-      faziam isso, n\xE9?"
+    text: "Espera, mas outros consoles tamb\xE9m tinham bons jogos, n\xE9? No que
+      o SNES inovou?\n"
   - name: Duzi
-    text: 'Que bom que perguntou! '
+    text: "Que bom que perguntou! O SNES tinha uma vantagem: ele permitia incluir
+      chips extras nos pr\xF3prios cartuchos! Isso podia aumentar o poder de processamento
+      em at\xE9 sete vezes!"
   - name: Duzi
-    text: "Chips extras podiam ser inclu\xEDdos nos cartuchos, aumentando o poder
-      de processamento dele em at\xE9 8 vezes!! Isso permitia a exibi\xE7\xE3o de
-      gr\xE1ficos 3d naquela \xE9poca. Al\xE9m disso, o SNES trouxe no pr\xF3prio
-      console o famoso Mode 7 para os jogos."
+    text: "O qu\xEA?! Tudo isso?"
   - name: "Voc\xEA"
-    text: "Uau! entendi, mas o que \xE9 esse mode 7?"
-  - name: Duzi
-    text: "Ah, de forma simplificada, o Mode 7 aplica um efeito de perspectiva e
-      traz uma impress\xE3o de gr\xE1ficos 3d, sabe?"
-  - name: Duzi
-    text: "Tipo no Super Mario kart, que na realidade todo o mapa \xE9 feito com
-      uma \xFAnica imagem, que \xE9 distorcida conforme a posi\xE7\xE3o do jogador.
-      Parece 3d, mas \xE9 s\xF3 um truque visual."
-  - name: Duzi
-    text: Conseguiu perceber?
+    text: "Sim! Isso permitia at\xE9 criar gr\xE1ficos em 3D, numa \xE9poca que isso
+      era quase imposs\xEDvel. E al\xE9m disso, o SNES tinha no pr\xF3prio console
+      o famoso Mode 7.\n"
   - name: "Voc\xEA"
-    text: "Saquei, realmente foi uma solu\xE7\xE3o bem inteligente, mas se ele inovou
-      tanto, por que n\xE3o dominou completamente o mercado?\r\n"
+    text: "Mode 7? O que \xE9 isso?"
   - name: Duzi
-    text: "Porque o sega Genesis tamb\xE9m era muito forte. A rivalidade entre a
-      Sega e Nintendo foi uma das mais conhecidas \"guerras dos videogames\" da hist\xF3ria,
-      com a famosa disputa Mario Vs Sonic."
+    text: "De forma simples: \xE9 uma t\xE9cnica que aplica um efeito de perspectiva,
+      dando a impress\xE3o de gr\xE1ficos 3D. Por exemplo: no Super Mario Kart, todo
+      o mapa \xE9 uma \xFAnica imagem, que vai sendo distorcida conforme a posi\xE7\xE3o
+      do jogador. Parece 3D, mas \xE9 s\xF3 um truque visual!\n"
+  - name: "Voc\xEA"
+    text: "Saquei! Realmente uma solu\xE7\xE3o bem inteligente. Mas se ele inovou
+      tanto\u2026 por que n\xE3o dominou completamente o mercado?"
+  - name: Duzi
+    text: "Porque o Sega Genesis tamb\xE9m era muito forte! A rivalidade entre a
+      Sega e a Nintendo foi uma das mais famosas \"guerras dos videogames\" da hist\xF3ria,
+      com a famosa disputa Mario vs Sonic!"
   - name: Duzi
     text: "Essa guerra gerou ate disputa judicial, sabia? devido a v\xE1rios contratos
-      da Nintendo com produtoras de jogos, que garantia a ela uma exclusividade desleal."
+      da Nintendo com produtoras de jogos, que garantiam exclusividade a ela - o
+      que muitos achavam desleal"
   - name: "Voc\xEA"
-    text: Interessante.. e qual seu jogo favorito dele?
+    text: "Uau\u2026 que confus\xE3o! E qual \xE9 o seu jogo favorito do SNES?"
   - name: Duzi
-    text: (Inserir o jogo favorito do Duzi)
+    text: "Para mim o Donkey Kong Country 2 \xE9 um dos mais marcantes! Ele tinha
+      gr\xE1ficos incr\xEDveis e era bem desafiador!\n"
   - name: "Voc\xEA"
-    text: "Legal! Nossa, obrigado pelas informa\xE7\xF5es, adorei conhecer mais sobre
-      a hist\xF3ria do Super Nintendo.\r\n"
+    text: "Valeu pelas informa\xE7\xF5es, Duzi! Adorei conhecer mais sobre ele."
   - name: Duzi
-    text: Que bom que gostou! Qualquer coisa pode perguntar de novo, estarei por
-      aqui.
+    text: Que bom que gostou!
